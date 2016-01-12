@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>arrow example</title>
+</head>
+<body>
+    <h1>Hi There</h1>
+    <p>Press download to see the arrow pointing to the downloads location in your browser</p>
+    <button type="button" id="download">Download</button>
+    <script src="arrow-min.js"></script>
+    <script>
+       window.onload = function() {
+        var downloadButton = document.getElementById('download');
+            downloadButton.onclick = showArrow;
+        function showArrow() {
+            Arrow.show();
+        }
+    }
+    </script>
+</body>
+</html>
